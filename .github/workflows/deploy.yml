@@ -97,6 +97,7 @@ jobs:
           # NOTE: If required, update to the appropriate source folder
           source: ./
           tag: latest
+          flags: >-
               --port 80
           secrets_update_strategy: overwrite
           env_vars_update_strategy: overwrite
