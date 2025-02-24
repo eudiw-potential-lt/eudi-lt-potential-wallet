@@ -1,0 +1,87 @@
+title: EUDIW Lithuania Testing Environment
+languageCode: en-us
+baseURL: https://wallet.eudiw-lt.lengor.dev/
+theme:
+  - PaperMod
+resourceDir: ../resources
+defaultContentLanguage: en
+sectionPagesMenu: main
+enableRobotsTXT: true
+services:
+  googleAnalytics:
+    id: ""
+pagination:
+  pagerSize: 3
+languages:
+  en:
+    contentDir: content/en
+    languageCode: en-US
+    weight: 1
+    title: EUDIW Potential Lithuania Testing Environment
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
+params:
+  text_color: ""
+  author: ""
+  assets:
+    favicon: "/images/favicon.ico"
+    favicon16x16: "/images/favicon-16x16.png"
+    favicon32x32: "/images/favicon-32x32.png"
+    apple_touch_icon: "/images/apple-touch-icon.png"
+    safari_pinned_tab: "/images/safari-pinned-tab.svg"
+
+  site_logo: ./images/ic-logo.svg
+  description: The last theme you'll ever need. Maybe.
+  background_color_class: bg-black
+  featured_image_class: cover bg-top
+  cover_dimming_class: bg-black-60
+  recent_posts_number: 3
+  build_id: 20241220
+  build_checksum: SHA256-93d2c628370388e5b51ee718a5ae151abbdacc5bd6a243109a1b695b5f067744
+  downloads_url: https://storage.googleapis.com/eudiw-lt-wallet-downloads
+  env: production
+  defaultTheme: light
+  ShowShareButtons: false
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  images:
+    - images/ic-logo.svg
+  profileMode:
+    enabled: false
+    title: PaperMod
+    imageUrl: "#"
+    imageTitle: my image
+    buttons:
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+  homeInfoParams:
+    Title: Potential LSP Lithuania Test Environment
+    Content: >
+      👋 Welcome to the European Large Scale Project (LSP) Potential Testing
+      Environment. Here are the builds for the European Digital Identy Wallet
+      test application.
+
+
+      Primary goals of the environment:
+
+
+      - Evaluation of the standards involved
+
+      - Testing interoperability
+
+      - Technical experimentation and exploration
+
+
+      Based on: https://github.com/eu-digital-identity-wallet/
+
