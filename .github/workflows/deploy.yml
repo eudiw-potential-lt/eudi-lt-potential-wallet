@@ -99,6 +99,7 @@ jobs:
           tag: latest
           flags: >-
               --port 80
+              --service-account=${{ secrets.WIF_SERVICE_ACCOUNT }}
           secrets_update_strategy: overwrite
           env_vars_update_strategy: overwrite
       
