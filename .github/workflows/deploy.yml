@@ -69,7 +69,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Google Auth
         id: auth
@@ -108,10 +111,13 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           status: ${{ job.status }}
-          content: "Deployment status"
+          content: "deployment status: ${{ job.status }}"
           title: "deploy"
-          description: "Wallet landing site deployment complete"
+          description: |-
+            Wallet landing site deployment.
+            Url: https://wallet.eudiw-lt.lengor.dev
+            Logs: https://console.cloud.google.com/run/detail/europe-west4/wallet/logs
           color: 0x0000ff
           url: "https://github.com/noxxious/eudi-wallet-site"
-          username: GitHub Actions
+          username: Website deploy
       
