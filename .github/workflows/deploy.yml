@@ -100,6 +100,7 @@ jobs:
           flags: >-
               --port 80
               --service-account=${{ secrets.WIF_SERVICE_ACCOUNT }}
+              --build-service-account projects/eudiw-dev/serviceAccounts/${{ secrets.WIF_SERVICE_ACCOUNT }}
           secrets_update_strategy: overwrite
           env_vars_update_strategy: overwrite
       
