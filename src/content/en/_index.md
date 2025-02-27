@@ -35,7 +35,7 @@ In order to properly test the the [wallet application](#wallet-application) has 
 - Platform: **Android**
 - Build_id: **{{<param build_id>}}**
 - Download: [eudiw-wallet-{{<param build_id>}}.apk]({{<param downloads_url>}}/eudiw-lt-wallet-{{<param build_id>}}.apk)
-- Checksum: **{{<param build_checksum>}}**
+- Checksum: [eudiw-wallet-{{<param build_id.sha256]({{<param downloads_url>}}/eudiw-lt-wallet-{{<param build_id>}}.sha256)
 
 ## Issuers
 - [Issuer mDL and PID](https://issuer.eudiw-lt.lengor.dev/)
