@@ -1,8 +1,12 @@
 title: EUDIW Lithuania Testing Environment
 languageCode: en-us
 baseURL: https://wallet.eudiw-lt.lengor.dev/
-theme:
-  - PaperMod
+module:
+  imports:
+    - path: github.com/KKKZOZ/hugo-admonitions
+    - path: github.com/adityatelange/hugo-PaperMod
+#theme:
+#  - hugo-PaperMod
 resourceDir: ../resources
 defaultContentLanguage: en
 sectionPagesMenu: main
@@ -17,7 +21,7 @@ languages:
     contentDir: content/en
     languageCode: en-US
     weight: 1
-    title: EUDIW Potential Lithuania Testing Environment
+    title: EUDIW Lithuania Testing Environment
 sitemap:
   changefreq: monthly
   priority: 0.5
@@ -38,8 +42,8 @@ params:
   featured_image_class: cover bg-top
   cover_dimming_class: bg-black-60
   recent_posts_number: 3
-  build_id: 20241220
-  build_checksum: SHA256-93d2c628370388e5b51ee718a5ae151abbdacc5bd6a243109a1b695b5f067744
+  build_id: 20250227
+  build_checksum: SHA256-5ba1e8b61ac682929be6be571b717d46844e3fb21d608abd50b4218334d7a811
   downloads_url: https://storage.googleapis.com/eudiw-lt-wallet-downloads
   env: production
   defaultTheme: light
@@ -55,33 +59,53 @@ params:
   ShowToc: true
   images:
     - images/ic-logo.svg
-  profileMode:
-    enabled: false
-    title: PaperMod
-    imageUrl: "#"
-    imageTitle: my image
-    buttons:
-      - name: Archives
-        url: archives
-      - name: Tags
-        url: tags
-  homeInfoParams:
-    Title: Potential LSP Lithuania Test Environment
-    Content: >
-      👋 Welcome to the European Large Scale Project (LSP) Potential Testing
-      Environment. Here are the builds for the European Digital Identy Wallet
-      test application.
+  #profileMode:
+  #  enabled: true
+  #  title: PaperMod
+  #  imageUrl: "#"
+  #  imageTitle: my image
+  #  buttons:
+  #    - name: Archives
+  #      url: archives
+  #    - name: Tags
+  #      url: tags
+  #homeInfoParams:
+    #Title: Posts#Potential LSP Lithuania Test Environment
+    #Content:
+    # |-
+    #  👋 Welcome to the European Large Scale Project (LSP) Potential Testing
+    #  Environment. Here are the builds for the European Digital Identy Wallet
+    #  test application.
 
+    #  Primary goals of the environment:
+    #  - Evaluation of the standards involved
+    #  - Testing interoperability
+    #  - Technical experimentation and exploration
 
-      Primary goals of the environment:
+    #  Based on: https://github.com/eu-digital-identity-wallet/
 
+    #  # Setup
+    #  Setup and installation for the Lithuania Potential EUDIW Sandbox environment.
+    #  In order to properly test the EUDI Wallet the wallet application has to be installed on your phone. 
 
-      - Evaluation of the standards involved
+    #  # Trust model
+    #  - IACA certificate [PEM]({{<param downloads_url>}}/iaca_lt_potential.pem) [DER]({{<param downloads_url>}}/iaca_lt_potential.der) 
+    #  - PID Issuer certificate [PEM]({{<param downloads_url>}}/pid_ds_0000_lt_dev.cert.pem) [DER]({{<param downloads_url>}}/pid_ds_0001_lt_dev.cert.der)
+    #  - mDL Issuer certificate [PEM]({{<param downloads_url>}}/mdl_ds_0000_lt_dev.cert.pem) [DER]({{<param downloads_url>}}/mdl_ds_0001_lt_dev.cert.der)
 
-      - Testing interoperability
+    #  # Wallet application
+    #  - Platform: **Android**
+    #  - Build_id: **{{<param build_id>}}**
+    #  - Download: [eudiw-wallet-{{<param build_id>}}.apk]({{<param downloads_url>}}/eudiw-lt-wallet-{{<param build_id>}}.apk)
+    #  - Checksum: **{{<param build_checksum>}}**
 
-      - Technical experimentation and exploration
+    #  # Issuers
+    #  - [Issuer mDL and PID](https://issuer.eudiw-lt.lengor.dev/)
+    #  - [Issuer mDL and PID(Regitra service)](https://mdl-test.regitra.lt/)
 
-
-      Based on: https://github.com/eu-digital-identity-wallet/
+    #  # Verifiers
+    #  - Proximity reader is not available yet
+    #  - [Verifier](https://verifier.eudiw-lt.lengor.dev/)
+    #      - Reader IACA certificate [PEM]({{<param downloads_url>}}/iaca_lt_potential.pem) [DER]({{<param downloads_url>}}/iaca_lt_potential.der) 
+    #      - Reader Certificate [PEM]({{<param downloads_url>}}/verifier_citybee_ds_0000_lt_dev.cert.pem) [DER]({{<param downloads_url>}}/verifier_citybee_ds_0001_lt_dev.cert.der) 
 
