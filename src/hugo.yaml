@@ -43,7 +43,7 @@ params:
   cover_dimming_class: bg-black-60
   recent_posts_number: 3
   build_id: 20250227
-  build_checksum: SHA256-5ba1e8b61ac682929be6be571b717d46844e3fb21d608abd50b4218334d7a811
+  build_checksum: SHA256-ff4bae6b9588ce50c73e8bd32582e0636f6cbe76ecc56389163b60f94f5a0099
   downloads_url: https://storage.googleapis.com/eudiw-lt-wallet-downloads
   env: production
   defaultTheme: light
