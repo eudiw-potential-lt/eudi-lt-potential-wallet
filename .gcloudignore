@@ -1,1 +1,4 @@
 src/.hugo_build.lock
+.devenv
+flake.nix
+flake.lock

@@ -2,3 +2,12 @@ src/public
 src/.hugo_build.lock
 resources/*
 deploy.sh
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml

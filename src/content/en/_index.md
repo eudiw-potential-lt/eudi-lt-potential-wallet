@@ -33,6 +33,8 @@ In order to properly test the the [wallet application](#wallet-application) has 
 
 ## Wallet application
 - Platform: **Android**
+
+### Wallet with reader verification
 - Build_id: **{{<param build_id>}}**
 - Download: [eudiw-wallet-{{<param build_id>}}.apk]({{<param downloads_url>}}/eudiw-lt-wallet-{{<param build_id>}}.apk)
 - Checksum: [eudiw-wallet-{{<param build_id>}}.sha256]({{<param downloads_url>}}/eudiw-lt-wallet-{{<param build_id>}}.sha256)
