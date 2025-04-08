@@ -1,2 +1,4 @@
 src/public
 src/.hugo_build.lock
+resources/*
+deploy.sh
