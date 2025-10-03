@@ -22,6 +22,10 @@ languages:
     languageCode: en-US
     weight: 1
     title: Potential EUDIW Lithuania Testing Environment
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 sitemap:
   changefreq: monthly
   priority: 0.5
@@ -41,7 +45,7 @@ params:
   featured_image_class: cover bg-top
   cover_dimming_class: bg-black-60
   recent_posts_number: 3
-  build_id: 20250630
+  build_id: 20250930
   downloads_url: /files
   env: production
   defaultTheme: light
